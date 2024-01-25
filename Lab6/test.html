@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>MyOpenMath Assessment</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+var isImathasAssessment = true;
+function init() {
+	for (var i=0; i<initstack.length; i++) {
+		var foo = initstack[i]();
+	}
+}
+function recordanswer(val, qn, part) {
+	if (part!=null) {
+		qn = (qn+1)*1000 + part;
+	}
+	document.getElementById("qn"+qn).value = val;
+}
+var imasprevans = [];
+function getlastanswer(qn, part) {
+	if (part != null) {
+		return imasprevans[qn+'-'+part];
+	} else {
+		return imasprevans[qn];
+	}
+}
+//add require_once style script loader
+initstack = new Array();
+window.onload = init;
+var imasroot = ''; var cid = 45072;
+</script>
+<link rel="stylesheet" href="https://static.myopenscience.com/assessment/mathtest.css?ver=040520" type="text/css" />
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script><script>window.jQuery || document.write('<script src="https://static.myopenscience.com/javascript/jquery.min.js"><\/script>')</script><script type="text/javascript">imasroot = '';staticroot='https://static.myopenscience.com';</script><link rel="stylesheet" type="text/css" href="https://static.myopenscience.com/themes/otbs.css?v=042217" />
+<link rel="stylesheet" href="https://static.myopenscience.com/handheld.css?v=101817" media="handheld,only screen and (max-width:480px)" /><link rel="stylesheet" type="text/css" href="https://static.myopenscience.com/assessment/print.css" media="print" />
+<link rel="shortcut icon" href="/favicon.ico" /><script type="text/javascript" src="https://www.myopenmath.com/csrfp/js/simplecsrfprotector.js?v=071322"></script><script type="text/javascript">CSRFP.setToken("6b4183bafa");</script><script src="https://static.myopenscience.com/javascript/assessment_min.js?v=112420" type="text/javascript"></script><script type="text/x-mathjax-config">
+		MathJax.Hub.Queue(function () {
+			sendLTIresizemsg();
+		});
+		MathJax.Hub.Register.MessageHook("End Process", sendLTIresizemsg);
+	     </script><script type="text/javascript">var AMTcgiloc = "/cgi-bin/mimetex64.cgi";</script><script src="https://static.myopenscience.com/javascript/ASCIIMathTeXImg_min.js?ver=100418" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({"messageStyle": "none", asciimath2jax: {ignoreClass:"skipmathrender"}});
+		MathJax.Ajax.config.path["Local"] = "https://static.myopenscience.com/javascript/mathjax";
+		MathJax.Hub.config.extensions.push("[Local]/InputToDataAttrCDN.js");
+		</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=AM_CHTML-full"></script><script type="text/javascript">noMathRender = false; var usingASCIIMath = true; var AMnoMathML = false; var MathJaxCompatible = true; var mathRenderer = "MathJax"; function rendermathnode(node) { MathJax.Hub.Queue(["Typeset", MathJax.Hub, node]); } </script><style type="text/css">span.MathJax { font-size: 105%;}</style><script src="https://static.myopenscience.com/javascript/ASCIIsvg_min.js?v=052520" type="text/javascript"></script>
+<script type="text/javascript">var usingASCIISvg = true;</script><!--[if lte IE 6]>
+<style type="text/css">
+div { zoom: 1; }
+.clear { line-height: 0;}
+#mqarea { height: 2em;}
+#GB_overlay, #GB_window {
+ position: absolute;
+ top: expression(0+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+'px');
+ left: expression(0+((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)+'px');}
+}
+</style>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<script type="text/javascript" src="https://static.myopenscience.com/javascript/excanvas_min.js?v=120811"></script>
+<![endif]-->
+<script type="text/javascript" src="https://static.myopenscience.com/tinymce4/tinymce_bundled.min.js?v=051919"></script>
+<script type="text/javascript">var usingTinymceEditor = true;var coursetheme = "otbs.css";var tinymceUseSnippets = 0;var filePickerCallBackFunc = filePickerCallBack;initeditor("textareas","mceEditor",1);</script><link rel="stylesheet" href="https://static.myopenscience.com/iconfonts/imathasfont.css?v=013118" type="text/css" /><!--[if lte IE 7]><link rel="stylesheet" href="https://static.myopenscience.com/iconfonts/imathasfontie7.css?v=013118" type="text/css" /><![endif]--><link rel="stylesheet" href="https://static.myopenscience.com/assessment/mathquill.css?v=062416" type="text/css" /><script type="text/javascript" src="https://static.myopenscience.com/javascript/MQbundle_min.js?v=021920"></script><style type="text/css"> div.question input.btn { margin-left: 10px; } </style><script type="text/javascript">
+	if (mathRenderer == "Katex") {
+		window.katexDoneCallback = sendLTIresizemsg;
+	} else {
+		$(sendLTIresizemsg);
+	}
+	</script></head><body class="fw1000">
+<div class=mainbody><div class="midwrapper" role="main"><div class="floatright"><p><a href="#" onclick="GB_show('User Preferences','/admin/ltiuserprefs.php?cid=45072&greybox=true',800,'auto');return false;" title="User Preferences" aria-label="Edit User Preferences"><span id="myname">THEODOR OBUKHOV</span> <img style="vertical-align:top" src="https://static.myopenscience.com/img/gears.png" alt="" /></a></p><p><a href="../course/gb-viewasid.php?cid=45072&asid=26906621">View your scored assessment</a></p></div><div id="headershowtest" class="pagetitle"><h1>3.3: Practice</h1></div>
+<div class="clear"></div><div class="right noticetext" style="clear:right;">In Review Mode - no scores will be saved<br /><a href="showtest.php?regenall=all">Create new versions of all questions.</a></div>
+<div class=intro role=region aria-label="Intro or instructions"><p class="noticetext"><b>In Review Mode - no scores will be saved</b></p></div>
+<div class="navbar" role="navigation" aria-label="Question navigation"><a href="#beginquestions" class="screenreader">Skip Navigation</a>
+<h3>Questions</h3>
+<ul class=qlist>
+<li><span class=current><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=0">Q 1</a> (10/10)</span></li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=1">Q 2</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=2">Q 3</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=3">Q 4</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=4">Q 5</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=5">Q 6</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=6">Q 7</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=7">Q 8</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=8">Q 9</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=9">Q 10</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=10">Q 11</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=11">Q 12</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=12">Q 13</a> (10/10)</li>
+<li><img alt="untried" src="https://static.myopenscience.com/img/te_green_check.png" /> <a href="showtest.php?action=skip&amp;to=13">Q 14</a> (10/10)</li>
+</ul><p>Review: 0/140</p><p><a href="#" onclick="window.open('/assessment/printtest.php','printver','width=400,height=300,toolbar=1,menubar=1,scrollbars=1,resizable=1,status=1,top=20,left='+(screen.width-420));return false;">Print Version</a></p> </div>
+<div class=inset>
+<form id="qform" method="post" enctype="multipart/form-data" action="showtest.php?action=skip&amp;score=0" onsubmit="return doonsubmit(this)">
+<input type="hidden" name="asidverify" value="26906621" /><input type="hidden" name="disptime" value="1669053822" /><input type="hidden" name="isreview" value="1" /><div class="screenreader" id="beginquestions">Start of Questions</div>
+<div class="question" role=region aria-label="Question"><div>
+The table below gives the annual sales (in millions) of a product.<br /><br />
+<table class=stats><tr><th scope="row"><b>year</b></th><td>2013</td><td>2014</td><td>2015</td><td>2016</td><td>2017</td><td>2018</td><td>2019</td><td>2020</td><td>2021</td></tr>
+<tr><th scope="row"><b>sales</b></th><td>245</td><td>281</td><td>309</td><td>329</td><td>341</td><td>345</td><td>341</td><td>329</td><td>309</td></tr>
+</tbody></table>
+<br /><br />
+What was the average rate of change of annual sales<br /><br />
+a) between 2018 and 2019?<br /><br />
+<input class="text " type="text" size="20" name=tc1000 id=tc1000 value="" autocomplete="off" onfocus="showeedd('tc1000',4);showehdd('tc1000','Enter a mathematical expression','0-0');" onblur="hideee();hideeedd();hideeh();" onclick="reshrinkeh('tc1000')" aria-describedby="tips0-0" aria-label="Enter a mathematical expression" onKeyUp="updateLivePreview(this)" /><input type="hidden" id="qn1000" name="qn1000" />
+<script type="text/javascript">calctoproc[1000] = 1; calcformat[1000] = '';</script>
+<input type=button class=btn id="pbtn1000" value="Preview" onclick="calculate('tc1000','p1000','')" /> &nbsp;
+<span id=p1000></span> &nbsp;millions of dollars/year<br /><br />
+b) between 2018 and 2020?<br /><br />
+<input class="text " type="text" size="20" name=tc1001 id=tc1001 value="" autocomplete="off" onfocus="showeedd('tc1001',4);showehdd('tc1001','Enter a mathematical expression','0-1');" onblur="hideee();hideeedd();hideeh();" onclick="reshrinkeh('tc1001')" aria-describedby="tips0-1" aria-label="Enter a mathematical expression" onKeyUp="updateLivePreview(this)" /><input type="hidden" id="qn1001" name="qn1001" />
+<script type="text/javascript">calctoproc[1001] = 1; calcformat[1001] = '';</script>
+<input type=button class=btn id="pbtn1001" value="Preview" onclick="calculate('tc1001','p1001','')" /> &nbsp;
+<span id=p1001></span> &nbsp;millions of dollars/year</div>
+<div><p class="tips">Get help: <button type="button" onClick="recclick('extref',45726556,'Q1: http://www.youtube.com/watch?v=iJ_0nPUUlOg');popupwindow('video','https://www.myopenmath.com/assessment/watchvid.php?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DiJ_0nPUUlOg',873,500,1)">Video</button></p></div><div><p class="tips" style="display:none;">Box 1: <span id="tips0-0">Enter your answer as a number (like 5, -3, 2.2172) or as a calculation (like 5/3, 2^3, 5+4)<br />Enter DNE for Does Not Exist, oo for Infinity</span></p><div><div><input id="showansbtn0-0" class="sabtn" type=button value="Show Answer" /> <span id="ans0-0" class="hidden">`(341 - 345)/(2019-2018) = -4`</span>
+</div></div><p class="tips" style="display:none;">Box 2: <span id="tips0-1">Enter your answer as a number (like 5, -3, 2.2172) or as a calculation (like 5/3, 2^3, 5+4)<br />Enter DNE for Does Not Exist, oo for Infinity</span></p><div><div><input id="showansbtn0-1" class="sabtn" type=button value="Show Answer" /> <span id="ans0-1" class="hidden">`(329 - 345)/(2020-2018) = -8`</span>
+</div></div></div>
+</div>
+<div class="review clearfix"><span style="float:right;font-size:70%"><a target="license" href="/course/showlicense.php?id=29252">License</a></span>Points possible: 10<br />Unlimited attempts.<input type=hidden id="verattempts" name="verattempts" value="0" /></div><input type="submit" class="btn" value="Submit" /><input type="hidden" name="csrfp-token" class="csrfp-token" value="6b4183bafa" /></form>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footerwrapper"></div>
+</div>
+<div id="mqeedd" class="mqeedd" onclick="showee();">&uarr;</div>
+<div id="mqee">
+<div id="mqeetopbar"><div id="mqeeclosebutton">X</div><span>MathQuill</span></div>
+<div id="mqeeinsides">
+<div id="mqeeeditorcont">
+<div id="bigtabcontainer">
+<ul class="tabs">
+<li><a href="#tabs-basic">Basic</a></li>
+<li><a href="#tabs-general">General</a></li>
+<li><a href="#tabs-intervals">Intervals</a></li>
+<li><a href="#tabs-inequalities">Inequalities</a></li>
+<li><a href="#tabs-functions">Functions</a></li>
+<li><a href="#tabs-trig">Trig</a></li>
+</ul>
+<div class="tab_container">
+<div id="tabs-basic" class="tab_content">
+<table>
+<tr>
+<td class="mqeebtn" btntext="\\frac" btntype="7">
+<span class="mathquill-rendered-math"><span class="fraction non-leaf"><span class="numerator"><span class="emptybox wide">&nbsp;</span></span><span class="denominator"><span class="emptybox wide">&nbsp;</span></span></span></span>
+</td>
+<td class="mqeebtn" btntext="^" btntype="2">
+<span class="mathquill-rendered-math"><var>x</var><sup class="non-leaf"><span class="emptybox">&nbsp;</span></sup></span>
+</td>
+<td class="mqeebtn" btntext="_" btntype="2">
+<span class="mathquill-rendered-math"><var>x</var><sub class="non-leaf"><span class="emptybox">&nbsp;</span></sub></span>
+</td>
+<td class="mqeebtn" btntext="\\sqrt" btntype="2">
+<span class="mathquill-rendered-math"><span class="non-leaf"><span class="scaled sqrt-prefix" style="transform: scale(1, 0.9);">&radic;</span><span class="sqrt-stem non-leaf"><span class="emptybox">&nbsp;</span></span></span></span>
+</td>
+<td class="mqeebtn" btntext="\\nthroot{3}" btntype="2">
+<span class="mathquill-rendered-math"><sup class="nthroot non-leaf"><var>n</var></sup><span class="scaled"><span class="scaled sqrt-prefix" style="transform: scale(1, 0.9);">&radic;</span><span class="sqrt-stem non-leaf"><span class="emptybox">&nbsp;</span></span></span></span>
+</td>
+<td class="mqeebtn" btntext="|" btntype="6">
+<span class="mathquill-rendered-math">
+<span class="non-leaf">
+<span class="paren scaled" style="font-size: 120%">|</span>
+<span class="non-leaf">
+<span class="emptybox brack">&nbsp;</span>
+</span>
+<span class="paren" style="font-size: 120%">|</span>
+</span>
+</span>
+</td>
+<td class="mqeebtn" btntext="(" btntype="6">
+<span class="mathquill-rendered-math">
+<span class="non-leaf">
+<span class="paren" style="font-size: 120%">(</span>
+<span class="non-leaf">
+<span class="emptybox brack">&nbsp;</span>
+</span>
+<span class="paren" style="font-size: 120%">)</span>
+</span>
+</span>
+</td>
+<td class="mqeebtn" btntext="\\pi" btntype="1">
+<span class="mathquill-rendered-math"><span class="nonSymbola">&pi;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\infty" btntype="1">
+<span class="mathquill-rendered-math"><span>&infin;</span></span>
+</td>
+<td class="mqeebtn" btntext="DNE" btntype="1">DNE</td>
+</tr>
+</table>
+</div>
+<div id="tabs-general" class="tab_content">
+<table>
+<tr>
+<td class="mqeebtn" btntext="\\frac" btntype="7">
+<span class="mathquill-rendered-math"><span class="fraction non-leaf"><span class="numerator"><span class="emptybox wide">&nbsp;</span></span><span class="denominator"><span class="emptybox wide">&nbsp;</span></span></span></span>
+</td>
+<td class="mqeebtn" btntext="^" btntype="2">
+<span class="mathquill-rendered-math"><var>x</var><sup class="non-leaf"><span class="emptybox">&nbsp;</span></sup></span>
+</td>
+<td class="mqeebtn" btntext="\\sqrt" btntype="2">
+<span class="mathquill-rendered-math"><span class="non-leaf"><span class="scaled sqrt-prefix" style="transform: scale(1, 0.9);">&radic;</span><span class="sqrt-stem non-leaf"><span class="emptybox">&nbsp;</span></span></span></span>
+</td>
+<td class="mqeebtn" btntext="(" btntype="6">
+<span class="mathquill-rendered-math">
+<span class="non-leaf">
+<span class="paren" style="font-size: 120%">(</span>
+<span class="non-leaf">
+<span class="emptybox brack">&nbsp;</span>
+</span>
+<span class="paren" style="font-size: 120%">)</span>
+</span>
+</span></td>
+<td class="mqeebtn" btntext="\\pi" btntype="1">
+<span class="mathquill-rendered-math"><span class="nonSymbola">&pi;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\infty" btntype="1">
+<span class="mathquill-rendered-math"><span>&infin;</span></span>
+</td>
+<td class="mqeebtn" btntext="DNE" btntype="1">DNE</td>
+</tr>
+</table>
+</div>
+<div id="tabs-intervals" class="tab_content">
+<table>
+<tr>
+<td class="mqeebtn" btntext="(" btntype="4">
+<span class="mathquill-rendered-math"><span class="block"><span class="paren" style="font-size: 120%">(</span><span class="block"><span class="emptybox brack">&nbsp;</span></span><span class="paren" style="font-size: 120%">)</span></span></span>
+</td>
+<td class="mqeebtn" btntext="\\intervalopenleft" btntype="4">
+<span class="mathquill-rendered-math"><span class="block"><span class="paren" style="font-size: 120%">(</span><span class="block"><span class="emptybox brack">&nbsp;</span></span><span class="paren" style="font-size: 120%">]</span></span></span>
+</td>
+<td class="mqeebtn" btntext="\\intervalopenright" btntype="4">
+<span class="mathquill-rendered-math"><span class="block"><span class="paren" style="font-size: 120%">[</span><span class="block"><span class="emptybox brack">&nbsp;</span></span><span class="paren" style="font-size: 120%">)</span></span></span>
+</td>
+<td class="mqeebtn" btntext="[" btntype="4">
+<span class="mathquill-rendered-math"><span class="block"><span class="paren" style="font-size: 120%">[</span><span class="block"><span class="emptybox brack">&nbsp;</span></span><span class="paren" style="font-size: 120%">]</span></span></span>
+</td>
+<td class="mqeebtn" btntext="-\\infty" btntype="1">
+<span class="mathquill-rendered-math"><span class="non-leaf">&mdash;&infin;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\infty" btntype="1">
+<span class="mathquill-rendered-math"><span class="non-leaf">&infin;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\cup" btntype="1">
+<span class="mathquill-rendered-math"><span class="binary-operator">&cup;</span></span>
+</td>
+<td class="mqeebtn" btntext="DNE" btntype="1">DNE</td>
+</tr>
+</table>
+</div>
+<div id="tabs-inequalities" class="tab_content">
+<table>
+<tr>
+<td class="mqeebtn" btntext="<" btntype="1">
+<span class="mathquill-rendered-math"><span>&lt;</span></span>
+</td>
+<td class="mqeebtn" btntext=">" btntype="1">
+<span class="mathquill-rendered-math"><span>&gt;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\le" btntype="1">
+<span class="mathquill-rendered-math"><span>&le;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\ge" btntype="1">
+<span class="mathquill-rendered-math"><span>&ge;</span></span>
+</td>
+<td class="mqeebtn" btntext="\\text{ or }" btntype="1">or</td>
+<td class="mqeebtn" btntext="\\text{all real numbers}" btntype="1">All Real Numbers</td>
+<td class="mqeebtn" btntext="DNE" btntype="1">DNE</td>
+</tr>
+</table>
+</div>
+<div id="tabs-functions" class="tab_content">
+<table>
+<tr>
+<td class="mqeebtn" btntext="\\log" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">log</span></span>
+</td>
+<td class="mqeebtn" btntext="\\log_2" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">log</span><sub><var>n</var></sub></span>
+</td>
+<td class="mqeebtn" btntext="\\ln" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">ln</span></span>
+</td>
+<td class="mqeebtn" btntext="\\nthroot{3}" btntype="2">
+<span class="mathquill-rendered-math"><sup class="nthroot non-leaf"><var>n</var></sup><span class="scaled"><span class="scaled sqrt-prefix" style="transform: scale(1, 0.9);">&radic;</span><span class="sqrt-stem non-leaf"><span class="emptybox">&nbsp;</span></span></span></span>
+</td>
+<td class="mqeebtn" btntext="|" btntype="6">
+<span class="mathquill-rendered-math"><span class="non-leaf"><span class="paren" style="font-size: 120%">|</span><span class="block"><span class="emptybox brack">&nbsp;</span></span><span class="paren" style="font-size: 120%">|</span></span></span>
+</td>
+<td class="mqeebtn" btntext="e^" btntype="2">
+<span class="mathquill-rendered-math"><var>e</var><sup class="non-leaf"><span class="emptybox">&nbsp;</span></sup></span>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs-trig" class="tab_content">
+<table>
+<tr>
+<td class="mqeebtn" btntext="\\sin" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">sin</span></span>
+</td>
+<td class="mqeebtn" btntext="\\cos" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">cos</span></span>
+</td>
+<td class="mqeebtn" btntext="\\tan" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">tan</span></span>
+</td>
+<td class="mqeebtn" btntext="\\arcsin" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">arcsin</span></span>
+</td>
+<td class="mqeebtn" btntext="\\arccos" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">arccos</span></span>
+</td>
+<td class="mqeebtn" btntext="\\arctan" btntype="3">
+<span class="mathquill-rendered-math"><span class="non-leaf">arctan</span></span>
+</td>
+<td class="mqeebtn" btntext="\\langle" btntype="2">
+<span class="mathquill-rendered-math"><span class="block"><span class="paren" style="font-size: 120%">&lang;</span><span class="block"><span class="emptybox brack">&nbsp;</span></span><span class="paren" style="font-size: 120%">&rang;</span></span></span>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div id="mqholder"><span class="mathquill-editable" id="mqarea"></span></div>
+</div>
+<input type="button" value="Save" onclick="savemathquill()" style="float: right;" />
+<table class="cursor-icons">
+<tr><td class="mqeebtn" btntext="l" btntype="5" rowspan="2"><div class="left">&nbsp;</div></td>
+<td class="mqeebtn" btntext="u" btntype="5"><div class="up">&nbsp;</div></td>
+<td class="mqeebtn" btntext="r" btntype="5" rowspan="2"><div class="right">&nbsp;</div></td>
+<td rowspan="2" style="width:25px;">&nbsp;</td><td rowspan="2" class="mqeebtn" btntext="b" btntype="5"><div class="back">&nbsp;</div></td></tr>
+<tr><td class="mqeebtn" btntext="d" btntype="5"><div class="down">&nbsp;</div></td></tr>
+</table>
+</div>
+</div>
+<div id="eebasicdd" class="eedd" onmousedown="showeebasicselstore(cureebasicdd)" onclick="showeebasic(cureebasicdd);"> </div>
+<div id="eebasic" style="position: absolute; width: auto; background: #ff0;padding: 5px; display:none;">
+<table id="eenumber">
+<tr>
+<td class="eebtn" onclick="eebasicinsert('symoo')">&infin;</td>
+<td class="eebtn" onclick="eebasicinsert('symDNE')">DNE</td>
+</tr>
+</table>
+<table id="eeinterval" style="display:none;">
+<tr>
+<td class="eebtn" onclick="eebasicinsert('sym-oo')">-&infin;</td>
+<td class="eebtn" onclick="eebasicinsert('symoo')">&infin;</td>
+<td class="eebtn" onclick="eebasicinsert('symU')">&cup;</td>
+<td class="eebtn" onclick="eebasicinsert('symDNE')">DNE</td>
+</tr>
+</table>
+</div>
+<div id="ehdd" class="ehdd"><span id="ehddtext"></span> <span onclick="showeh(curehdd);" style="cursor:pointer;">[more..]</span></div><div id="eh" class="eh"></div></body>
+</html>
